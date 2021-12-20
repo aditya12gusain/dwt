@@ -108,7 +108,7 @@ select {
 }
 
 .form {
-  height: 400px;
+  height: 380px;
   border-radius: 8px;
   border: 2px solid black;
   padding: 15px;
@@ -215,4 +215,18 @@ span {
 .fimg {
   background: rgba(red, green, blue, alpha);
   background-color: rgba(red, green, blue, 0.4);
+}
+
+/* .galleryImg {
+  transition: transform 0.7s ease-in-out;
+} */
+.galleryImg:hover {
+  transition: transform 0.7s ease-in-out;
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.fimg:hover {
+  padding: 10px 20px;
+  cursor: pointer;
 }

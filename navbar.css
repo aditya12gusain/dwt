@@ -213,6 +213,7 @@ ul {
   }
 
   .openMenu {
+    position: fixed;
     margin-left: 30px;
     display: flex;
     color: aliceblue;
