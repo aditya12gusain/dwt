@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downtown</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="secondSec.css" />
+    <script
+      src="https://kit.fontawesome.com/f52d038757.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="mainlogo">
+            <h1 class="logo">DWT LISTING</h1>
+            <p class="downtown">DownTown</p>
+          </div>
+
+          <div class="openMenu"><i class="fas fa-grip-lines"></i></div>
+
+          <ul class="nav-links" id="links">
+            <li class="dropdown">
+              <a href="#" class="drop"
+                >Home <i class="fas fa-chevron-down"></i
+              ></a>
+
+              <div class="dropdown-content">
+                <a href="#">restaurants</a>
+                <a href="#">art</a>
+                <a href="#">real estate</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="drop"
+                >Search <i class="fas fa-chevron-down"></i
+              ></a>
+
+              <div class="dropdown-content">
+                <a href="#">appliances</a>
+                <a href="#">beauty</a>
+                <a href="#">health</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="wid drop"
+                >Single Listing <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">list 1</a>
+                <a href="#">list 2</a>
+                <a href="#">list 3</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="drop"
+                >Pages <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">best restaurants</a>
+                <a href="#">best appliances</a>
+                <a href="#">best products</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">Login</a>
+            </li>
+            <li>
+              <a href="#" class="wid bord"
+                ><i class="fas fa-plus"></i> Submit Listings</a
+              >
+            </li>
+
+            <div class="closeMenu"><i class="fas fa-times-circle"></i></div>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- second section css file used here : secondSec.css  -->
+      <div class="row">
+        <div class="leftSec">
+          <p style="color: white; font-size: 20px">
+            More Than <b>18</b> business listed
+          </p>
+          <h1 style="margin-bottom: 10px; color: white">
+            Find and explore world top Places
+          </h1>
+          <img
+            src="arrow.png"
+            alt=""
+            style="height: 60px; width: 60px; margin-bottom: 10px"
+          />
+          <div class="gallery">
+            <div class="component">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="img1 component">
+              <img
+                src="pics/appliance.png"
+                alt=""
+                class="galleryImg"
+                style="background-color: rgb(243, 135, 11)"
+              />
+              <span>Appliances</span>
+            </div>
+            <div class="img2 component">
+              <img
+                src="pics/art.png"
+                alt=""
+                class="galleryImg"
+                style="background-color: rgb(241, 31, 147)"
+              />
+              <span>Arts</span>
+            </div>
+            <div class="img3 component">
+              <img
+                src="pics/automotive.png"
+                alt=""
+                class="galleryImg"
+                style="background-color: rgb(39, 204, 182)"
+              />
+              <span>Automotive</span>
+            </div>
+            <div class="img4 component">
+              <img
+                src="pics/beau.png"
+                alt=""
+                class="galleryImg"
+                style="background-color: rgb(245, 119, 119)"
+              />
+              <span>Beauty</span>
+            </div>
+            <div class="img5 component">
+              <img
+                src="pics/health.png"
+                alt=""
+                class="galleryImg"
+                style="background-color: rgb(55, 245, 235)"
+              />
+              <span>Health</span>
+            </div>
+            <div class="img6 component">
+              <img
+                src="pics/hotels.png"
+                alt=""
+                class="galleryImg"
+                style="background-color: rgb(243, 135, 11)"
+              />
+              <span>Hotels</span>
+            </div>
+            <div class="component">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="rightSec">
+          <!-- form  -->
+          <form action="#" class="form">
+            <h3>Find the best Place</h3>
+            <label for="title">Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="What are you looking for "
+            />
+
+            <label for="category">Select Category</label>
+
+            <select name="category" id="category">
+              <option value="hotels" style="color: rgb(199, 197, 197)" selected>
+                Select Business Category
+              </option>
+              <option value="hotels">Hotels</option>
+              <option value="restaurant">Restaurants</option>
+              <option value="real estate">Real Estate</option>
+            </select>
+
+            <label for="address">By Street Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Location"
+            />
+
+            <!-- button  -->
+
+            <div class="button">Search</div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- bottom section  -->
+    <div class="features">
+      <h3 style="justify-content: center; text-align: center">
+        Featured Cities
+      </h3>
+      <h2 style="justify-content: center; text-align: center">
+        Explore Restaurants, Bars, And Cafés
+      </h2>
+
+      <div class="featureCards">
+        <div class="card1 card">
+          <h3 class="country">France</h3>
+          <!-- paris  -->
+          <img
+            src="https://i.pinimg.com/564x/ef/39/dd/ef39ddea3bd91a6e3927dcd7a360926f.jpg"
+            alt=""
+            style="height: 400px; width: 280px; border-radius: 10px"
+            class="fimg"
+          />
+        </div>
+        <div class="card2 card">
+          <h3 class="country">United Kingdom</h3>
+          <!-- uk  -->
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Westminster_Abbey_-_West_Door.jpg/800px-Westminster_Abbey_-_West_Door.jpg"
+            alt=""
+            style="height: 400px; width: 280px; border-radius: 10px"
+            class="fimg"
+          />
+        </div>
+        <div class="card3 card">
+          <!-- us  -->
+          <img
+            src="https://images.unsplash.com/photo-1624957939579-6218e58bd3e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1372&q=80"
+            alt=""
+            style="height: 400px; width: 280px; border-radius: 10px"
+            class="fimg"
+          />
+          <h3 class="country">United States</h3>
+        </div>
+      </div>
+    </div>
+    <!-- form on right  -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-position: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 3, 3, 0.685),
+      rgba(0, 0, 0, 0.863)
+    ),
+    url("https://i.pinimg.com/originals/68/01/92/680192bc44af715e70e57e5b6ed4971d.jpg");
+
+  min-height: 100vh;
+  width: 100rem;
+}
+
+/* navbar  */
+
+ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a,
+.drop {
+  text-decoration: none;
+  display: inline-block;
+  color: antiquewhite;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.container {
+  border-bottom: 1px solid papayawhip;
+  display: flex;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeMenu {
+  display: none;
+}
+
+/* single listing  */
+.wid {
+  width: 157px;
+}
+
+/* submit listing  */
+.bord {
+  margin-bottom: 5px;
+
+  margin-left: 30px;
+  width: 175px;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+}
+
+.bord:hover {
+  background-color: coral;
+  color: aqua;
+}
+
+.navbar .logo {
+  margin-left: 104px;
+  color: antiquewhite;
+  font-size: 36px;
+}
+
+.mainlogo {
+  position: relative;
+}
+
+.downtown {
+  top: 49px;
+  position: absolute;
+  left: 260px;
+  color: antiquewhite;
+}
+
+.nav-links {
+  margin-left: 64px;
+  display: flex;
+}
+
+.nav-links li a:hover {
+  border-bottom: 1px solid whitesmoke;
+  /* padding-bottom: 2px; */
+  color: rgb(219, 255, 255);
+}
+
+.openMenu {
+  /* font-size: ; */
+  display: none;
+  cursor: pointer;
+}
+
+/* for dropdown  */
+.drop {
+  cursor: pointer;
+}
+
+.dropdown {
+  /* position: relative; */
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-weight: 700;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  background-color: antiquewhite;
+  min-width: 130px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 16px;
+  color: black;
+  padding: 17px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .drop {
+  background-color: rgb(250, 137, 61);
+}
+
+/* @media (max-width: 1500px) {
+  .row {
+    flex-direction: column;
+  }
+} */
+
+/* @media (min-width: 1080px) {
+  .navbar {
+    display: grid;
+  }
+}
+
+@media (min-width: 1500px) {
+  .navbar {
+    display: flex;
+  }
+} */
+
+/* media queries  */
+@media (max-width: 1080px) {
+  .nav-links {
+    width: 125vw;
+    height: 137vh;
+    position: fixed;
+    right: 0;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    background: rgb(43, 41, 41);
+    transition: top 1s ease;
+  }
+  #links {
+    padding-left: 69px;
+    justify-content: flex-start;
+    margin: 0;
+    display: flex;
+    top: 0px;
+  }
+  .nav-links .closeMenu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+  }
+
+  .closeMenu {
+    color: whitesmoke;
+  }
+
+  .nav-links li a:hover {
+  }
+
+  .openMenu {
+    margin-left: 30px;
+    display: flex;
+    color: aliceblue;
+  }
+  .bord {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .navbar {
+    display: grid;
+  }
+  /* .rightSec {
+    padding-left: 78px;
+  } */
+}
+@media (max-width: 1900px) {
+  .navbar {
+    display: flex;
+  }
+}
+/* @media (max-width: 1934px) {
+  .nav-links {
+    margin-left: 0px;
+    display: flex;
+  }
+  .navbar .logo {
+    color: antiquewhite;
+    font-size: 34px;
+  }
+  .downtown {
+    left: 245px;
+  }
+} */
+
+@media (max-width: 972px) {
+  .nav-links {
+    margin-left: 0px;
+    display: flex;
+    width: 328vw;
+    height: 169vh;
+  }
+  .navbar .logo {
+    color: antiquewhite;
+    font-size: 34px;
+  }
+}
+@media (max-width: 732px) {
+  .nav-links {
+    margin-left: 0px;
+    display: flex;
+    width: 328vw;
+    height: 220vh;
+  }
+  .navbar .logo {
+    color: antiquewhite;
+    font-size: 34px;
+  }
+}
+
+/* @media (max-width: 1846px) {
+ .nav-links {
+    margin-left: 0px;
+    display: flex;
+}
+} */
+
+/* @media (max-width: 1080px) {
+  #links {
+    padding-left: 69px;
+    justify-content: flex-start;
+    margin: 0;
+    display: flex;
+    top: 0px;
+  }
+  .nav-links {
+    width: 207vw;
+    height: 70vh;
+  }
+} */
+
+/* media queries  */
+/* @media (max-width: 1500) {
+  .nav-links {
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    right: 0;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    background: rgb(43, 41, 41);
+    transition: top 1s ease;
+  }
+  #links {
+    padding-left: 69px;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    top: 0px;
+  }
+  .nav-links .closeMenu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+  }
+
+  .closeMenu {
+    color: whitesmoke;
+  }
+
+  .nav-links li a:hover {
+  }
+
+  .openMenu {
+    margin-left: 85px;
+    display: flex;
+    color: aliceblue;
+  }
+  .bord {
+    margin-left: 18px;
+  }
+} */
+
+@media (max-width: 1500px) {
+  /* .nav-links {
+    margin-left: 0px;
+    display: flex;
+  } */
+  /* .navbar {
+    display: grid;
+  } */
+
+  .navbar .logo {
+    color: antiquewhite;
+    font-size: 34px;
+    /* margin-left: 11px; */
+  }
+  .downtown {
+    left: 145px;
+  }
+}
+/* 
+@media (max-width: 1086) {
+  .nav-links {
+    width: 269vw;
+    height: 70vh;
+ 
+  }
+  #links {
+    padding-left: 69px;
+    justify-content: flex-start;
+    margin: 0;
+    display: flex;
+    top: 0px;
+  }
+  .navbar .logo {
+    color: antiquewhite;
+    font-size: 34px;
+    margin-left: 0px;
+  }
+  .downtown {
+    left: 145px;
+  }
+} */
+
+/* @media (max-width: 1846px) {
+  .nav-links {
+    margin-left: 0px;
+    display: flex;
+  }
+} */
+
+/* @media (max-width: 1080px) {
+  #links {
+    padding-left: 69px;
+    justify-content: flex-start;
+    margin: 0;
+    display: flex;
+    top: 0px;
+  }
+  .nav-links {
+    width: 269vw;
+    height: 70vh;
+  }
+} */
+
+/* navbar  */
+@media (min-width: 1934px) {
+  /* .mainlogo {
+    margin-left: -53px;
+  } */
+}
